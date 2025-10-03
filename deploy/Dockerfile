@@ -22,7 +22,7 @@ RUN apt-get update && apt install -y --no-install-recommends ca-certificates && 
         exit 1; \
     fi && \
     apt-get update && apt install -y --no-install-recommends \
-        sudo vim wget curl git build-essential gdb systemd tzdata init \
+        sudo vim wget curl git build-essential gdb systemd tzdata init cmake \
         mysql-server libmysqlclient-dev libmicrohttpd-dev \
         libffi-dev libunistring-dev libpsl-dev libnghttp2-dev && \
     rm -rf /var/lib/apt/lists/* && \
