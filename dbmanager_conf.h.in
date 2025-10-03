@@ -1,0 +1,6 @@
+#pragma once
+
+#define LOG_CONF "@LOG_CONF@"
+#define LOG_CATEGORY "@PROJECT_NAME@"
+#define OHNO_VERSION "@PROJECT_VERSION@"
+#define DBCLI "@DBCLI@"

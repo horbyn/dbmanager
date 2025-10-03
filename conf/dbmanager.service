@@ -1,0 +1,17 @@
+[Unit]
+Description=database manager
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/dbmngr/bin/dbmanager \
+            --db-host=localhost \
+            --db-user=root \
+            --db-password=root \
+            --db-name=mydb \
+            --pool-size=8
+Restart=on-failure
+RestartSec=30s
+
+[Install]
+WantedBy=multi-user.target
